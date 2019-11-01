@@ -1,6 +1,7 @@
 # dslabmongo
 
 Step 7.
+```
 rs0:PRIMARY> rs.status()
 {
 	"set" : "rs0",
@@ -147,7 +148,8 @@ rs0:PRIMARY> rs.status()
 	},
 	"operationTime" : Timestamp(1572639822, 1)
 }
-
+```
+```
 rs0:PRIMARY> rs.config()
 {
 	"_id" : "rs0",
@@ -212,12 +214,14 @@ rs0:PRIMARY> rs.config()
 		"replicaSetId" : ObjectId("5dbc886dcd1a884a526ab19c")
 	}
 }
+```
 
 Step 8.
 ![alt text](https://github.com/liarmand/dslabmongo/blob/master/Снимок%20экрана%202019-11-01%20в%2023.19.22.png)
 
 
 Step 10.1.
+```
 rs0:SECONDARY> rs.status()
 {
 	"set" : "rs0",
@@ -345,8 +349,10 @@ rs0:SECONDARY> rs.status()
 	},
 	"operationTime" : Timestamp(1572640531, 1)
 }
+```
 
 Step 10.2.
+```
 rs0:SECONDARY> rs.config()
 {
 	"_id" : "rs0",
@@ -411,6 +417,7 @@ rs0:SECONDARY> rs.config()
 		"replicaSetId" : ObjectId("5dbc886dcd1a884a526ab19c")
 	}
 }
+```
 
 Step 10.3.
 ![alt text](https://github.com/liarmand/dslabmongo/blob/master/Снимок%20экрана%202019-11-01%20в%2023.46.18.png)
